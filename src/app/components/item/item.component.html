@@ -1,7 +1,6 @@
 <div *ngIf="itemsToDisplay">
   <div class="divbtn">
     <button class="btnStyle" (click)="toggleState()">
-      <!-- <i class="material-icons">{{ listState ? tableIcon : listIcon }}</i> -->
       <img *ngIf="listState" class="icon-img" src="assets/cells.png" />
       <img *ngIf="!listState" class="icon-img" src="assets/list.png" />
       {{ listState ? "Table" : "List" }}
@@ -25,7 +24,6 @@
       <img class="icon-img" src="assets/sorting.png" />Sort
     </button>
   </div>
-  <!-- *ngIf="listState" -->
   <div [ngClass]="{ 'grid-container': !listState }">
     <div class="divWarp" *ngFor="let item of itemsToDisplay; let i = index">
       <div class="divStyleList">
@@ -41,17 +39,11 @@
             [value]="item.Title"
           />
         </ng-template>
-        <!-- <span class="titleStyleList" *ngIf="!inputMode" (click)="moveToInput()"
-          >Title:{{ item.Title }}</span
-        >
-        <input *ngIf="inputMode" [value]="item.Title" /> -->
-        <!-- <br/> -->
         <span class="yearStyleList"
-          >year:{{ item.Year | date : "dd/MM/yyyy" }}</span
+          >
+          year:{{ item.Year | dateStr }}</span
         >
       </div>
-      <!-- <br/> -->
-      <!-- <span>{{item.imdbID}}</span> -->
       <div id="imgWrap">
         <img
           class="imgStyleList"
@@ -64,27 +56,4 @@
       </div>
     </div>
   </div>
-  <!-- <div *ngIf="!listState" class="grid-container">
-    <div *ngFor="let item of itemsToDisplay" class="grid-item">
-      <br />
-      <div class="divStyle">
-        <ng-container *ngIf="editingIndex !== i; else editField">
-          <label (click)="moveToInput(i)">Title:{{ item.Title }}</label>
-        </ng-container>
-        <ng-template #editField>
-          <input
-            type="text"
-            [(ngModel)]="items[i].Title"
-            (blur)="editingIndex = null"
-          />
-        </ng-template>
-         <span class="titleStyle" *ngIf="!inputMode" (click)="moveToInput()">Title:{{item.Title}}</span>
-   <input *ngIf="inputMode" [value]="item.Title"/> 
-        <br />
-        <span class="yearStyle">Year:{{ item.Year }}</span>
-      </div>
-    <span>{{item.imdbID}}</span> 
-      <img class="imgStyle" [src]="item.Poster" alt="Image" />
-    </div>
-  </div> -->
 </div>

@@ -21,7 +21,6 @@ export class ApiService {
   handleError(error: HttpErrorResponse) {
     let errorMessage = 'error on get data';
 
-    // Throw the error as an Observable
     return errorMessage;
   }
 }

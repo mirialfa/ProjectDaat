@@ -7,7 +7,6 @@ div {
   height: 50px;
   margin: 10px;
   box-shadow: 0 4px 8px rgb(0 0 0 / 28%);
-  /* background: linear-gradient(#8c81c6, #f88f14, #ffdf86); */
   color: #af3131;
   font-size: 16px;
   font-weight: bold;
@@ -22,10 +21,8 @@ div {
     box-shadow: 0 4px 8px rgb(0 0 0 / 28%);
     color: #af3131;
     font-size: 16px;
-    /* font-weight: bold; */
     border: 1px solid #af3131;
 }
-
 .groupstyle{
     margin-top: 20px;
 }

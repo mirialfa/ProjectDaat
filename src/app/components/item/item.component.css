@@ -1,26 +1,21 @@
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between;  */
 }
-
 .grid-item {
-  width: calc(33.33% - 20px); /* Adjust as needed */
-  margin-bottom: 20px; /* Adjust as needed */
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px; 
 
-  background-color: #f0f0f0; /* Placeholder background color */
+  background-color: #f0f0f0; 
   padding: 20px;
   box-sizing: border-box;
 }
 .btnStyle{
-  /* background-color: antiquewhite; */
   border-radius: 10px;
   width: 120px;
   height: 50px;
   margin: 10px;
   box-shadow: 0 4px 8px rgb(0 0 0 / 28%);
-  /* background: linear-gradient(#8c81c6, #f88f14, #ffdf86); */
-  /* background-color: #b1a7df; */
   color: #af3131;
   font-size: 16px;
   font-weight: bold;
@@ -50,7 +45,6 @@ img{
 }
 .yearStyle{
   border: 3px solid #af3131;
-  /* margin-top: 18px; */
   border-radius: 5px;
   padding: 8px;
   display: flex;
@@ -59,7 +53,6 @@ img{
   direction: ltr;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px rgb(#8c81c6, #f88f14, #ffdf86) / 28%;
-
 }
 .divStyle{
   display: flex;
@@ -104,8 +97,6 @@ img{
 .imgStyle{
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
-  /* align-items: flex-start; */
   padding-right: 65px !important;
 }
 .imgStyleList{
@@ -119,20 +110,6 @@ img{
 display: flex;
 flex-direction: column;
 }
-
-/* .ng-star-inserted{
-  border: 3px solid #af3131;
-  margin-top: 18px;
-  border-radius: 5px;
-  padding: 8px;
-  display: flex;
-  flex-direction: inherit;
-  width: 10%;
-  align-items: center;
-  direction: ltr;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 8px rgb(#8c81c6, #f88f14, #ffdf86) / 28%;
-} */
 .icon-img{
   width: 20px;
   height: 20px;

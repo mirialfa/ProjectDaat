@@ -1,6 +1,4 @@
 <div>
- 
-
 <mat-tab-group class="groupstyle"  mat-stretch-tabs = "false"  mat-align-tabs = "start"  > 
   <mat-tab  *ngFor="let item of itemsGroup | keyvalue" class="divType" >
   <ng-template mat-tab-label >
@@ -13,7 +11,6 @@
   </div>
 </div>
 </ng-template>
-<!-- </mat-tab> -->
 <button id="btnRefresh" class="btnStyle" (click)="refresh()">
   <img class="icon-img" src="assets/refresh.png">Refresh
 </button>

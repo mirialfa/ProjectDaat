@@ -9,11 +9,13 @@ import { CommonModule, DatePipe } from '@angular/common';
 import { ItemComponent } from './components/item/item.component';
 import { ModalContentComponent } from './components/modal-content/modal-content.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { DateStrPipe } from './date-str.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
-    ModalContentComponent
+    ModalContentComponent,
+    DateStrPipe
   ],
   imports: [
     BrowserModule,
@@ -23,8 +25,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatTabsModule,
     CommonModule,
     MatDialogModule,
-    DatePipe 
-
+    DatePipe
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,7 +14,6 @@ export class ItemComponent {
   @Input() items!: Item[];
   itemsToDisplay!: Item[];
   listState: boolean = true;
-  // inputMode:boolean = false;
   sortDesc=false;
   editingIndex: number | null = null;
 
@@ -30,7 +29,7 @@ export class ItemComponent {
     this.listState = !this.listState;
   }
   handleImageError(item:Item) {
-    item.Poster = ''; // Set imageUrl to null to hide the broken image
+    item.Poster = ''; 
   }
   titleChanged(event:any,item:Item){
     this.editingIndex = null;
@@ -46,9 +45,9 @@ this.modalService.openModal(item);
   }
   moveToInput(index:number){
     this.editingIndex = index;
-    // this.inputMode = true;
   }
   search(event: any) {
+    debugger;
     let param = event.target.value;
     if (param) {
       this.itemsToDisplay = this._filter(param);
